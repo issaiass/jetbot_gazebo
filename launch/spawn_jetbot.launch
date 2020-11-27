@@ -1,24 +1,24 @@
 <launch>
   <!-- Arguments for robot and world -->
   <arg name="robot_namespace" default="robot"/>
-  <arg name="world_name" default="$(find jetbot_gazebo)/worlds/clearpath_playpen.world" />
+  <arg name="world_name" default="$(find jetbot_gazebo)/worlds/turtlebot3_world.world" />
   <!-- Initial Location of the robot -->
-  <arg name="x" default="0.0"/>
-  <arg name="y" default="0.0"/>
+  <arg name="x" default="1.0"/>
+  <arg name="y" default="2.0"/>
   <arg name="z" default="-1.0"/>
-  <arg name="yaw" default="0.0"/>
+  <arg name="yaw" default="0.0"/>   
   <!-- Arguments for intel realsense -->
-  <arg name="pointcloud_enable" default="true" />
-  <arg name="realsense_enable" default="true" />
+  <arg name="pointcloud_enable" default="false" />
+  <arg name="realsense_enable" default="false" />
   <!-- Arguments for RPLidar -->
   <arg name="lidar_enable" default="true" />
   <arg name="visualize_laser" default="true" /> 
   <!-- Arguments for IMU -->
   <arg name="imu_enable" default="true" />
   <!-- Arguments for GPS -->
-  <arg name="gps_enable" default="true" />
+  <arg name="gps_enable" default="false" />
   <!-- Arguments for sonars -->
-  <arg name="ultrasonic_enable" default="true" />
+  <arg name="ultrasonic_enable" default="false" />
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
   <arg name="paused" default="false"/>
   <arg name="use_sim_time" default="true"/>
